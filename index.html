@@ -47,7 +47,7 @@
 
             <!-- Event Card -->
             <div class="bg-white text-black p-6 rounded-xl shadow-lg border border-gray-300">
-                <p class="font-bold text-lg mb-2 text-gray-900">28 Mon, April</p>
+                <p id="current-date" class="font-bold text-lg mb-2 text-gray-900"></p> <!-- Dynamic Date Here -->
                 <p class="text-gray-600">Customer Call at 10:00</p>
                 <p class="text-gray-600">AI demo at 11:00</p>
             </div>
@@ -85,5 +85,23 @@
     <footer>
         <p>&copy; 2024 Meguro AI. All rights reserved.</p>
     </footer>
+    <script>
+        // Function to get current date and format it
+        function getCurrentFormattedDate() {
+            const date = new Date();
+            const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            const months = [
+                "January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"
+            ];
+            const day = days[date.getDay()];
+            const dayOfMonth = date.getDate();
+            const month = months[date.getMonth()];
+            return `${dayOfMonth} ${day}, ${month}`;
+        }
+
+        // Insert the current date into the element with id 'current-date'
+        document.getElementById("current-date").innerHTML = getCurrentFormattedDate();
+    </script>
 </body>
 </html>
