@@ -1,107 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover AI security in Complexity</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meguro Tech</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #2563eb;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #6b7280;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #2563eb;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e5e7eb;
+      color: #4b5563;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta button {
+      background-color: #2563eb;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
+  <header>
+    <h1>Meguro Tech</h1>
+    <p>Cybersecurity. Compliance. Confidence.</p>
+  </header>
 
-    <header class="bg-white shadow">
-        <div class="container mx-auto flex flex-wrap justify-between items-center py-4 px-6">
-            <div class="text-2xl font-bold">Meguro AI</div>
-            <nav class="space-x-8">
-                <a href="#topics" class="link-sales">Topics</a>
-                <a href="#about" class="link-about">About</a>
-                <a href="#resources" class="link-pricing">Resources</a>
-                <a href="#demo" class="link-resources">Demo</a>
-                <a href="#" class="btn-nav">Contact me</a>
-            </nav>
-        </div>
-    </header>
+  <section>
+    <h2>About Us</h2>
+    <p>
+      We are a cybersecurity consultancy rooted in expertise across governance, risk, compliance, secure software development, and DevSecOps. We help companies confidently align with ISO/IEC 27001, implement SSDLC practices, and automate risk management through tools like OWASP ZAP, Terraform, and GCP-native services.
+    </p>
+  </section>
 
-    <main class="bg-gray-50 py-16">
-        <!-- Hero Section -->
-        <section class="text-center container mx-auto px-6 border border-gray-200 rounded-lg p-8 mb-4 shadow-sm">
-            <h1 class="text-4xl font-bold mb-6 text-gray-900">Discover AI security in complexity</h1>
-            <p class="text-xl mb-8 text-gray-600">AI-driven platform designed to identify patterns, automate workflows, and empower your team to secure AI models.</p>
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-md">Demo</a>
-                <a href="#" class="border border-gray-300 hover:border-gray-400 text-gray-900 hover:bg-gray-100 font-bold py-3 px-6 rounded-full shadow-md">Talk to us</a>
-            </div>
-        </section>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>ISO 27001 Readiness</h3>
+        <p>Gap analysis, SoA documentation, risk register development, and internal audit preparation tailored for SMEs and cloud-native teams.</p>
+      </div>
+      <div class="service-card">
+        <h3>DevSecOps Automation</h3>
+        <p>Integrate security testing tools like OWASP ZAP, MobSF, and Checkov into CI/CD pipelines using Jenkins, Bitbucket Pipelines, and ArgoCD.</p>
+      </div>
+      <div class="service-card">
+        <h3>GDPR Compliance & Data Privacy</h3>
+        <p>Conduct data mapping, DPIAs, vendor assessments, and implement privacy-by-design strategies in alignment with GDPR and other global regulations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Risk Frameworks</h3>
+        <p>Design risk assessment models tailored to IoT, biotech, or fintech industries leveraging STRIDE, OWASP, and AI-assisted reporting tools.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Visuals Section (Notifications, Events) -->
-        <section class="container mx-auto flex flex-col sm:flex-row justify-center space-y-8 sm:space-y-0 sm:space-x-8 border border-gray-200 rounded-lg p-8 mb-3 shadow-sm">
-            <!-- Notification Card -->
-            <div class="bg-white text-black p-6 rounded-xl shadow-lg border border-gray-300">
-                <div class="flex items-center space-x-4">
-                    <img src="A_minimalistic_AI_s.png" alt="Profile" class="w-12 h-12 rounded-full">
-                    <div>
-                        <p class="font-bold text-gray-900">Hi there, I'm Meguro</p>
-                        <p class="text-gray-600">I'll set up demo for you</p>
-                    </div>
-                </div>
-            </div>
+  <section class="cta">
+    <h2>Ready for ISO/IEC 27001 Certification?</h2>
+    <p>Contact us to schedule a free 30-minute consultation.</p>
+    <button onclick="contactUs()">Get Started</button>
+  </section>
 
-            <!-- Event Card -->
-            <div class="bg-white text-black p-6 rounded-xl shadow-lg border border-gray-300">
-                <p id="current-date" class="font-bold text-lg mb-2 text-gray-900"></p> <!-- Dynamic Date Here -->
-                <p class="text-gray-600">Customer Call at 10:00</p>
-                <p class="text-gray-600">AI demo at 11:00</p>
-            </div>
-        </section>
-        
-        <!-- Content for each section goes here -->
-        <section id="topics" class="section-sales py-16 border border-gray-200 rounded-lg p-8 mb-3 shadow-sm">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900">Topics</h2>
-                <p class="text-gray-600">Details about security information and trainings...</p>
-            </div>
-        </section>
+  <footer>
+    &copy; 2025 Meguro Tech. All rights reserved.
+  </footer>
 
-        <section id="about" class="section-about py-16 bg-gray-100 border border-gray-200 rounded-lg p-8 mb-3 shadow-sm">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900">About</h2>
-                <p class="text-gray-600">Learn more about the company...</p>
-            </div>
-        </section>
-
-        <section id="resources" class="section-pricing py-16 border border-gray-200 rounded-lg p-8 mb-3 shadow-sm">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900">Resources</h2>
-                <p class="text-gray-600">Explore our various resources...</p>
-            </div>
-        </section>
-
-        <section id="demo" class="section-resources py-16 bg-gray-100 border border-gray-200 rounded-lg p-8 shadow-sm">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900">Demo</h2>
-                <p class="text-gray-600">Demo available for customers and partners...</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Meguro AI. All rights reserved.</p>
-    </footer>
-    <script>
-        // Function to get current date and format it
-        function getCurrentFormattedDate() {
-            const date = new Date();
-            const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-            const months = [
-                "January", "February", "March", "April", "May", "June", "July",
-                "August", "September", "October", "November", "December"
-            ];
-            const day = days[date.getDay()];
-            const dayOfMonth = date.getDate();
-            const month = months[date.getMonth()];
-            return `${dayOfMonth} ${day}, ${month}`;
-        }
-
-        // Insert the current date into the element with id 'current-date'
-        document.getElementById("current-date").innerHTML = getCurrentFormattedDate();
-    </script>
+  <script>
+    function contactUs() {
+      window.location.href = "mailto:ethan@meguro.top?subject=Inquiry from Website";
+    }
+  </script>
 </body>
 </html>
